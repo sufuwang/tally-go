@@ -1,8 +1,8 @@
 package main
 
 import (
-	"log"
 	"net/http"
+	"tally-go/src/server"
 )
 
 func HelloServer(w http.ResponseWriter, req *http.Request) {
@@ -12,8 +12,9 @@ func HelloServer(w http.ResponseWriter, req *http.Request) {
 
 func main() {
 	http.HandleFunc("/hello", HelloServer)
-	err := http.ListenAndServeTLS(":1443", "src/auth/cert.pem", "src/auth/key.pem", nil)
-	if err != nil {
-		log.Fatal("ListenAndServe: ", err)
-	}
+	server.Start(server.StartParameter{
+		Domain:    "localhost",
+		HttpPort:  8000,
+		HttpsPort: 1443,
+	})
 }

@@ -4,7 +4,7 @@ tmp_dir = "dev"
 [build]
   bin = "./dev/main"
   cmd = "go build -o ./dev/main ."
-  delay = 2000
+  delay = 1200
   exclude_dir = ["assets", "dev", "vendor"]
   exclude_file = []
   exclude_regex = []
