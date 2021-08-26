@@ -8,4 +8,6 @@
 <br />
 <br />
 或者
+<br />
+<br />
 <b>Setp 1-1: </b>./bin/air<br />
