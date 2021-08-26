@@ -1,1 +1,10 @@
-tmp/
+/*
+
+!src
+!.gitignore
+!go.mod
+!go.sum
+!LICENSE
+!main.go
+!README.md
+!insatll.sh

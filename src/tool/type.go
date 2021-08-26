@@ -13,6 +13,7 @@ type TypeUserInfoMysql struct {
 	Id        int    `json:"id"`
 	NickName  string `json:"nickName"`
 	Password  string `json:"password"`
+	AvatarUrl string `json:"avatarUrl"`
 	Signature string `json:"signature"`
 	Token     string `json:"token"`
 }

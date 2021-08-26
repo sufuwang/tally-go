@@ -61,10 +61,11 @@ func QueryByField(field string) map[string]bool {
 
 func RegisterUser(userInfo tool.TypeUserInfo) {
 	sql := fmt.Sprintf(
-		"INSERT INTO %s (nickName, password, signature, token) VALUES ('%s', '%s', '%s', '%s')",
+		"INSERT INTO %s (nickName, password, avatarUrl, signature, token) VALUES ('%s', '%s', '%s', '%s', '%s')",
 		Table_User,
 		userInfo.NickName,
 		userInfo.Password,
+		userInfo.AvatarUrl,
 		userInfo.Signature,
 		userInfo.Token,
 	)

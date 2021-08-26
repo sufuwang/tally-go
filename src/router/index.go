@@ -9,7 +9,7 @@ import (
 // http.Handle("/register", Middleware.CORSMiddleWare(http.HandlerFunc(handleRegister)))
 
 func RegisterRouter() {
-	ds := user.RegisterUser()
+	ds := user.RegisterUserRouter()
 	for k, v := range ds {
 		http.Handle(k, middleware.CORSMiddleWare(http.HandlerFunc(v)))
 	}

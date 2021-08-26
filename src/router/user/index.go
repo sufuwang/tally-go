@@ -9,7 +9,7 @@ import (
 
 type TypeRouters map[string]http.HandlerFunc
 
-func RegisterUser() TypeRouters {
+func RegisterUserRouter() TypeRouters {
 	//http.HandleFunc("/test", handleTest)
 	//http.HandleFunc("/login", handleLogin)
 	//http.HandlerFunc("/register", handleRegister)
