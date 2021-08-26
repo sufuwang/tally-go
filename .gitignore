@@ -1,6 +1,7 @@
 /*
 
 !src
+!bin
 !.gitignore
 !go.mod
 !go.sum
